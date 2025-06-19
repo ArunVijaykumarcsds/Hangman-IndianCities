@@ -1,2 +1,14 @@
-# Hangman-IndianCities
-🎮 A classic Hangman-style Python game with an Indian twist! 🏙️ Guess the names of popular Indian cities letter by letter — you win if you guess right before your chances run out! ✅ Simple logic, beginner-friendly code, and perfect for learning string handling, loops, and conditional logic in Python. 🇮🇳 Explore India one guess at a time!
+# 🇮🇳 Hangman Game by Arun vk
+
+This repository includes **three variations** of a classic Hangman game in Python:
+
+## 🎮 Variants
+
+- `console/` – A simple terminal-based version  
+- `tkinter/` – A GUI version using Python's Tkinter module  
+- `pygame/` – A graphical version with sound effects using Pygame
+
+## 🧑‍💻 Author
+**Arun vk** – passionate about Python, game dev, and showcasing India with code 🇮🇳
+
+Built with 💙 in 2025
