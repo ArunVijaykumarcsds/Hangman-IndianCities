@@ -5,7 +5,7 @@ Welcome to my Python Hangman project! This repository features **three versions*
 ---
 
 ## 🎮 Game Variants Included
-
+ 
 - 🖥️ **Console Version** – Terminal-based, playable online
 - 🪟 **Tkinter GUI Version** – A basic GUI interface
 - 🎧 **Pygame GUI Version** – Visual and audio-rich interface
