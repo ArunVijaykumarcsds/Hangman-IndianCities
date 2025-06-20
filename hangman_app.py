@@ -29,10 +29,21 @@ if "word" not in st.session_state:
 def get_display_word():
     return " ".join([letter if letter in st.session_state.used_letters else "_" for letter in st.session_state.word])
 
-# ---------- UI ----------
+# ---------- Header ----------
 st.title("🇮🇳 Hangman – I ❤ My India")
-st.caption("Guess an Indian city one letter at a time. You have 7 lives. Good luck!")
+st.caption("A tribute to Indian cities and culture, one guess at a time.")
 
+# ---------- Author & Tribute ----------
+with st.container():
+    st.markdown("---")
+    st.markdown(
+        "<h5 style='text-align: center;'>Created with ❤️ by <strong>Arun VK</strong><br>"
+        "🇮🇳 Proud to be an Indian 🇮🇳</h5>",
+        unsafe_allow_html=True
+    )
+    st.markdown("---")
+
+# ---------- Game Display ----------
 st.markdown(f"### Word: `{get_display_word()}`")
 st.markdown(f"**Lives:** {st.session_state.lives}")
 st.markdown(f"**Guessed Letters:** {' '.join(sorted(st.session_state.used_letters)) or 'None yet'}")
@@ -72,5 +83,3 @@ if st.session_state.game_over:
         for key in ["word", "word_letters", "used_letters", "lives", "game_over", "result_message"]:
             del st.session_state[key]
         st.rerun()
-
-
